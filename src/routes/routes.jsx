@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Layout from "../pages/LayoutPage";
 import NoPage from "../pages/NoPage";
+import BackOffice from "../pages/BackOffice";
 
 const routers = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const routers = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+  },
+  {
+    path: "/backoffice",
+    element: <BackOffice />,
   },
 ]);
 

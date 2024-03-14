@@ -5,6 +5,7 @@ import "../styles/Navbar.css";
 import imageLogo from "../assets/Logo.png";
 
 import { MdOutlineDiscount } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,9 @@ const Navbar = () => {
           <img src={imageLogo} />
           <h3>Counter Visit.</h3>
         </div>
-        <Button>to Office</Button>
+        <Link type="button" to="/backoffice">
+          to Office
+        </Link>
       </div>
     </div>
   );
